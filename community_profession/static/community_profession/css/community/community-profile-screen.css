@@ -1,0 +1,263 @@
+/*.community-profile-screen .img-fluid
+{
+    height:18.75rem;
+}*/
+
+.community-profile-screen
+{
+    min-width: 120px;
+    height: 18.75rem;
+    /*margin: 2px -8px 3px 0px;*/
+    overflow: hidden;
+}
+
+.community-profile-screen .img-fluid
+{
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.interior-designer-heading
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+.interior-designer-no-member
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.share-community
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.join-btn .btn
+{
+    background-color: var(--color-12);
+}
+
+.iterator-design-options .dropdown-menu
+{
+    background-color: var(--color-11);
+}
+
+.iterator-design-options .dropdown-item
+{
+    border: 0.031rem solid rgba(22, 24, 24, 0.2);
+}
+
+.iterator-design-options .dropdown-btn
+{
+    background-color: rgba(255, 0, 0, 0);
+    color: var(--color-2);
+    border: 0rem;
+}
+
+.create-post
+{
+    background-color: var(--color-1);
+    color: var(--color-13);
+    border-radius: 0.5rem;
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.125rem;
+}
+
+.post .posted-by-heading
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.post .post-description
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: #FFFFFF;
+}
+
+.add-comment-btn .btn
+{
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--color-2);
+    background: rgba(96, 99, 99, 0.6);
+}
+
+/* Start Mobile view */
+
+@media all and (min-width: 577px)
+{
+
+}
+
+
+@media all and (max-width: 576px)
+{
+    .community-profile-screen
+    {
+        min-width: 120px;
+        height: 85px;
+        overflow: hidden;
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .interior-designer-heading
+    {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .interior-designer-no-member
+    {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+@media (min-width: 577px)
+{
+    html{
+        font-size: 40%;
+    }
+
+    .community-profile-screen
+    {
+        min-width: 120px;
+        height: 150px;
+        overflow: hidden;
+        padding-left:7px;
+        padding-right:19px;
+    }
+
+    .create-post-padding
+    {
+        padding-left:11px;
+        padding-right:19px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    html{
+        font-size: 45%;
+    }
+
+    .community-profile-screen
+    {
+        min-width: 120px;
+        height: 150px;
+        overflow: hidden;
+        padding-left:7px;
+        padding-right:19px;
+    }
+
+    .create-post-padding
+    {
+        padding-left:11px;
+        padding-right:19px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    html{
+        font-size: 60%;
+    }
+
+    .community-profile-screen
+    {
+        min-width: 120px;
+        height: 195px;
+        overflow: hidden;
+        padding-left:8px;
+        padding-right:19px;
+    }
+
+    .create-post-padding
+    {
+        padding-left:13px;
+        padding-right:18px;
+    }
+}
+
+
+@media (min-width: 1200px)
+{
+    html{
+        font-size: 80%;
+    }
+
+    .community-profile-screen
+    {
+        min-width: 120px;
+        height: 232px;
+        overflow: hidden;
+        padding-left:14px;
+        padding-right:15px;
+    }
+
+    .create-post-padding
+    {
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    html{
+        font-size: 100%;
+    }
+
+    .community-profile-screen
+    {
+        min-width: 120px;
+        height: 375px;
+        overflow: hidden;
+        padding-left:19px;
+        padding-right:19px;
+    }
+
+    .create-post-padding
+    {
+        padding-left:20px;
+        padding-right:20px;
+    }
+}
+/* End Mobile Views */

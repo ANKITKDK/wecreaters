@@ -1,0 +1,82 @@
+{% extends 'community_profession/community.html' %}
+{% load static %}
+{% block title %}
+<title>Community Screen</title>
+{% endblock title %}
+{% block own_css %}
+<!--   own css   -->
+<!-- Ask Post CSS-->
+<link rel="stylesheet" href="{% static 'community_profession/css/community/ask-post-pop-up-css.css' %}">
+
+<link rel="stylesheet" href="{% static 'community_profession/css/community/community.css' %}">
+{% endblock own_css %}
+
+{% block community_content %}
+<!-- Start Community -->
+<div class="row">
+   <div class="col-12 col-sm-12 col-md-12 border-bottom pb-2 pt-4 community-body">
+      <div class="row">
+         <div class="col-10 col-sm-6 col-md-6 community-post-profile-picture float-container post-community-profile">
+            <!-- Start Profile Picture -->
+            <div class="float-child">
+               <div class="row">
+                  <div class="col-md-12">
+                     <img class="img-fluid rounded-circle"
+                        src="{{User_POST.User_Profile.profile_image.url}}" alt="Chania"
+                        height="100%" width="100%">
+                  </div>
+               </div>
+            </div>
+            <!-- End Profile Picture -->
+            <!-- <img class="img-fluid rounded-circle" src="{{User_POST.User_Profile.profile_image.url}}" alt="Chania"> -->
+            <div class="float-child-1">
+               <!-- Start community name -->
+               <div class="row">
+                  <div class="col-md-12 community-name">
+                     {{User_POST.User_Profile.usertype.user_id.first_name}} {{User_POST.User_Profile.usertype.user_id.last_name}}
+                  </div>
+               </div>
+               <!-- End community name -->
+               <!-- Start community time -->
+               <div class="row">
+                  <div class="col-md-12 community-time">
+                     {{User_POST.Date}} / {{User_POST.Time}} 
+                  </div>
+               </div>
+               <!-- End community time -->
+            </div>
+         </div>
+         <!-- <div class="col-5 col-sm-4 col-md-4">
+            <div class="row">
+               <div class="col-md-12 community-name">
+                  {{User_POST.User_Profile.usertype.user_id.first_name}} {{User_POST.User_Profile.usertype.user_id.last_name}}
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 community-time">
+                  {{User_POST.Date}} / {{User_POST.Time}} 
+               </div>
+            </div>
+         </div> -->
+      </div>
+      <div class="row pt-4">
+         <div class="col-12 col-sm-12 col-md-12 community-description">
+            <div class="form-group">
+               <form action="{% url 'Community_Edit_My_Question' User_POST.id %}" method="POST">
+                  {% csrf_token %}
+                  <div class="row">
+                     <div class="col-9 col-sm-10 col-md-10 community-description edit-form">
+                        <textarea type="text" class="form-control" name="Question">{{User_POST.Question}}</textarea>
+                     </div>
+                     <div class="col-3 col-sm-2 col-md-2 pl-0 community-description">
+                        <button type="submit" class="btn btn-normal-b btn-block">Edit</button>
+                     </div>
+                  </div>
+               </form>
+           </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{% endblock community_content %}
